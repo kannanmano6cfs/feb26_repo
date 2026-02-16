@@ -1,3 +1,4 @@
+#Dockerfile to create frontend container
 #Get JDK dependencies to run the application
 FROM openjdk:21-slim
 
