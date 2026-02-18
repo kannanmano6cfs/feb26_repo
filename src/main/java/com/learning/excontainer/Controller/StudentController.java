@@ -18,18 +18,4 @@ public class StudentController {
 
     @GetMapping("/")
     public String index() {
-        return "Hello World!! I am running on container in Docker Desktop!!";
-    }
-
-    @GetMapping("/students")
-    public Iterable<Student> students() {
-        Iterable<Student> students = studentRepository.findAll();
-        return students;
-    }
-
-    @PostMapping("/new")
-    public ResponseEntity<String> newStudent(@RequestBody Student student) {
-        studentRepository.save(student);
-        return new ResponseEntity<String>("Student details added successfully", HttpStatus.OK);
-    }
-}
+        return "Hello World!! I am running on Azure app service";
