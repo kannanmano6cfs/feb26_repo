@@ -19,3 +19,6 @@ public class StudentController {
     @GetMapping("/")
     public String index() {
         return "Hello World!! I am running on Azure app service";
+    }
+}
+
